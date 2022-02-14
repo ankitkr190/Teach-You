@@ -3,3 +3,7 @@ $(document).ready(function () {
     $("#sidebar").toggleClass("active");
   });
 });
+
+$("#datepicker").datepicker({
+  uiLibrary: "bootstrap4",
+});

@@ -1,0 +1,128 @@
+<div class="container">
+    <div class="header">
+    <div class="title">
+        <h4>Lecture Links</h4>
+    </div>
+  
+        <a href="/" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">Add Lecture</a> 
+        <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLabel">Add Subject</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-group">
+                          <label for="exampleFormControlInput1">title</label>
+                          <input type="text" class="form-control" id="exampleFormControlInput1">
+                        </div>
+                        <div class="form-group">
+                          <label for="exampleFormControlSelect1">subject_name</label>
+                          <select class="form-control" id="exampleFormControlSelect1">
+                            <option>Anatomy 1</option>
+                            <option>Anatomy 2</option>
+                            <option>Anatomy 3</option>
+                            <option>Anatomy 4</option>
+                            
+                          </select>
+
+                          </div>
+
+                          <div class="form-group">
+                            <label for="exampleFormControlInput1">lecture_link</label>
+                            <input type="text" class="form-control" id="exampleFormControlInput1">
+                          </div>
+
+                          <div class="form-group row">
+                              <div class="col-6">
+                                <label for="exampleFormControlInput1">date</label>
+                                <input type="text" class="form-control" id="exampleFormControlInput1">
+                            </div>
+                            <div class="col-6">
+                                <label for="exampleFormControlInput1">time</label>
+                                <input type="text" class="form-control" id="exampleFormControlInput1">
+                                </div>
+                          </div>
+                          
+
+
+                      
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                            <button type="button" class="btn btn-primary">Save changes</button>
+                          </div>
+                      </form>
+                </div>
+                
+              </div>
+            </div>
+          </div>
+
+    </div>
+
+
+   
+
+</div>
+
+
+<div class="container mt-4">
+    <div class="mt-4">
+        <div class="table-responsive">
+            <table class="table">
+                
+                <caption>List of subjects
+
+                 
+                </caption>
+                
+                <thead>
+                  <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">name</th>
+                    <th scope="col">image</th>
+                    
+                    <th scope="col">status</th>
+                    <th scope="col">which_year</th>
+                    <th scope="col">action</th>
+
+
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th scope="row">1</th>
+                    <td>Mark</td>
+                    <td>Otto</td>
+                    <td>active</td>
+                    <td>first year</td>
+                    <td>
+
+                       <a routerLink="" class="action"> <i class="bx bx-edit"></i></a>
+                       <a routerLink="" class="action"> <i class="bx bx-trash"></i></a>
+
+                        
+                      
+
+                    </td>
+                  </tr>
+                 
+                </tbody>
+            </table>
+
+            <nav aria-label="Page navigation example">
+                <ul class="pagination">
+                  <li class="page-item"><a class="page-link" href="#">Previous</a></li>
+                  <li class="page-item"><a class="page-link" href="#">1</a></li>
+                  <li class="page-item"><a class="page-link" href="#">2</a></li>
+                  <li class="page-item"><a class="page-link" href="#">3</a></li>
+                  <li class="page-item"><a class="page-link" href="#">Next</a></li>
+                </ul>
+                </nav>
+          </div>
+    </div>
+</div>
