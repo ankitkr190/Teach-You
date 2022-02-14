@@ -1,0 +1,64 @@
+
+  <div class="sidebar" id="sidebar" >
+    <div class="logo-details">
+      <i class='bx bx-slideshow'></i>
+      <span class="logo_name">Teach You</span>
+    </div>
+      <ul class="nav-links">
+        <li>
+          <a href="#" class="active">
+            <i class='bx bx-grid-alt' ></i>
+            <span class="links_name">Dashboard</span>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <i class='bx bx-box' ></i>
+            <span class="links_name">Product</span>
+          </a>
+       
+        <li class="log_out">
+          <a href="#">
+            <i class='bx bx-log-out'></i>
+            <span class="links_name">Log out</span>
+          </a>
+        </li>
+      </ul>
+  </div>
+  <section class="home-section">
+    <nav>
+      <div class="sidebar-button">
+        <i class='bx bx-menu-alt-left sidebarBtn' id="sidebarCollapse"></i>
+      </div>
+      <div class="search-box">
+        
+      </div>
+        <div class="user-wrapper d-flex align-items-center">
+
+            <button type="button" class="dropdown-toggle d-flex align-items-center" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <img src="https://i.ibb.co/vVQHKr9/borrar.jpg" alt="borrar" class="rounded-circle">
+            <span >Hello Admin</span>
+          </button>
+            <div class="dropdown-menu dropdown-menu-right dropdown">
+
+              <a class="dropdown-item" type="button">Notifications <span class="badge badge-success ml-2">5</span> </a>
+              <a class="dropdown-item" type="button">Logout</a>
+
+            </div>
+
+      </div>
+    </nav>
+
+    <div class="home-content">
+        
+<router-outlet></router-outlet>
+        
+        
+       </div>
+  </section>
+
+  
+
+
+
+
