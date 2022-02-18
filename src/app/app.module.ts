@@ -14,6 +14,8 @@ import { LiveLinksComponent } from './Pages/live-links/live-links.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { ToastrModule } from 'ngx-toastr';
+import { PracticalSessionComponent } from './Pages/live-session/practical-session/practical-session.component';
+import { FirstYearComponent } from './Pages/live-session/practical-session/first-year/first-year.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +26,9 @@ import { ToastrModule } from 'ngx-toastr';
     LiveSessionComponent,
     SubjectComponent,
     NotesComponent,
-    LiveLinksComponent
+    LiveLinksComponent,
+    PracticalSessionComponent,
+    FirstYearComponent
   ],
   imports: [
     BrowserModule,

@@ -8,8 +8,8 @@ import { HttpHeaders } from '@angular/common/http';
   providedIn: 'root'
 })
 export class SuperadminService {
-  globle_url='http://127.0.0.1:8000/api/'
-  imagepath='http://127.0.0.1:8000'
+  globle_url='http://18.117.230.114:8000/api/'
+  imagepath='http://18.117.230.114:8000'
 
   constructor(private http: HttpClient) { }
   headers= new HttpHeaders()

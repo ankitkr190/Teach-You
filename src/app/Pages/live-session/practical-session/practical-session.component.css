@@ -26,34 +26,26 @@
   display: flex;
 }
 
-.table {
-  margin-top: 50px;
-  border-radius: 10px;
-  background-color: #fff;
-}
-
-.table thead th {
-  font-weight: 500;
-  border: none;
-}
-
-i {
-  margin-right: 20px;
-  font-size: larger;
-  color: black;
-}
-
-.action {
+.card {
   cursor: pointer;
-}
-
-.modal-footer {
-  padding: 0.5rem;
   border: none;
+
+  align-items: center;
+  border-radius: 10px;
+  margin: 10px;
+  width: 300px;
+  height: 100px;
+  box-shadow: 0 5px 10px rgb(0, 0, 0, 0.1);
 }
 
-.ng-template {
-  padding: 0.75rem;
-  vertical-align: top;
-  border-top: 1px solid #dee2e6;
+.year-text h5 {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.year {
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  padding: 20px;
 }

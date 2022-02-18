@@ -1,54 +1,47 @@
 <div class="container">
     <div class="header">
     <div class="title">
-        <h4>Lecture Links</h4>
+        <h4>First Year Practical Sessions</h4>
     </div>
-  
-        <a href="/" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">Add Lecture</a> 
+
+        <a href="/" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">Add Video</a>
         <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
             <div class="modal-dialog" role="document">
               <div class="modal-content">
                 <div class="modal-header">
-                  <h5 class="modal-title" id="exampleModalLabel">Add Lecture</h5>
+                  <h5 class="modal-title" id="exampleModalLabel">Add Practical Session</h5>
                   <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                     <span aria-hidden="true">&times;</span>
                   </button>
                 </div>
                 <div class="modal-body">
                     <form>
+                      <div class="form-group">
+                        <label for="exampleFormControlInput1">Title</label>
+                        <input type="text" class="form-control" formControlName="name" id="exampleFormControlInput1">
+                        
+
+                      </div>
+                       
+
+                       
+
                         <div class="form-group">
-                          <label for="exampleFormControlInput1">title</label>
-                          <input type="text" class="form-control" id="exampleFormControlInput1">
-                        </div>
-                        <div class="form-group">
-                          <label for="exampleFormControlSelect1">subject_name</label>
-                          <select class="form-control" id="exampleFormControlSelect1">
-                            <option>Anatomy 1</option>
-                            <option>Anatomy 2</option>
-                            <option>Anatomy 3</option>
-                            <option>Anatomy 4</option>
-                            
-                          </select>
+                            <label for="exampleFormControlFile1">Upload Video</label>
+
+
+                            <input type="file" class=" form-control form-control-sm"  id="exampleFormControlFile1">
 
                           </div>
 
-                          <div class="form-group">
-                            <label for="exampleFormControlInput1">lecture_link</label>
-                            <input type="text" class="form-control" id="exampleFormControlInput1">
-                          </div>
-
-                         
-                          
-
-
-                      
+                       
                         <div class="modal-footer">
                             <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                            <button type="button" class="btn btn-primary">Save changes</button>
+                            <input type="submit" class="btn btn-primary" value="Save changes">
                           </div>
                       </form>
                 </div>
-                
+
               </div>
             </div>
           </div>
@@ -56,7 +49,7 @@
     </div>
 
 
-   
+
 
 </div>
 
@@ -65,21 +58,20 @@
     <div class="mt-4">
         <div class="table-responsive">
             <table class="table">
-                
-                <caption>List of lectures
 
-                 
+                <caption>List of Video
+
+
                 </caption>
-                
+
                 <thead>
                   <tr>
                     <th scope="col">#</th>
-                    <th scope="col">subject_name</th>
                     <th scope="col">title</th>
-                    
-                    <th scope="col">lecture_link</th>
-                    <th scope="col">date</th>
-                    <th scope="col">time</th>
+                    <th scope="col">video</th>
+                    <th scope="col">Date</th>
+                    <th scope="col">Time</th>
+
 
                     <th scope="col">action</th>
 
@@ -89,67 +81,65 @@
                 <tbody>
                   <tr>
                     <th scope="row">1</th>
-                    <td>Mark</td>
-                    <td>Otto</td>
-                    <td>active</td>
-                    <td>first year</td>
-                    <td></td>
+                    <td>lorem</td>
+                    <td>ipsum</td>
+                    <td>26/04/2022</td>
+                    <td>12:00 AM</td>
+
+                   
                     <td>
+                       <a routerLink="#" class="action" data-toggle="modal" data-target="#exampleModal-edit"><i class="bx bx-edit"></i></a>
 
-                       <a routerLink="#" class="action"> <i class="bx bx-edit" data-target="#editModal" data-toggle="modal"></i></a>
 
-                      <!--Edit Modal start-->
+                        <!-- edit-model -->
 
-                      <div class="modal fade" id="editModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+
+                       <div class="modal fade" id="exampleModal-edit" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
                         <div class="modal-dialog" role="document">
                           <div class="modal-content">
                             <div class="modal-header">
-                              <h5 class="modal-title" id="exampleModalLabel">Edit Lecture</h5>
+                              <h5 class="modal-title" id="exampleModalLabel">Edit Practical Session</h5>
                               <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                 <span aria-hidden="true">&times;</span>
                               </button>
                             </div>
                             <div class="modal-body">
                                 <form>
+                                  <div class="form-group">
+                                    <label for="exampleFormControlInput1">Title</label>
+                                    <input type="text" class="form-control" formControlName="name" id="exampleFormControlInput1">
+                                    
+            
+                                  </div>
+                                   
+            
+                                   
+            
                                     <div class="form-group">
-                                      <label for="exampleFormControlInput1">title</label>
-                                      <input type="text" class="form-control" id="exampleFormControlInput1">
-                                    </div>
-                                    <div class="form-group">
-                                      <label for="exampleFormControlSelect1">subject_name</label>
-                                      <select class="form-control" id="exampleFormControlSelect1">
-                                        <option>Anatomy 1</option>
-                                        <option>Anatomy 2</option>
-                                        <option>Anatomy 3</option>
-                                        <option>Anatomy 4</option>
-                                        
-                                      </select>
+                                        <label for="exampleFormControlFile1">Upload Video</label>
+            
+            
+                                        <input type="file" class=" form-control form-control-sm"  id="exampleFormControlFile1">
             
                                       </div>
             
-                                      <div class="form-group">
-                                        <label for="exampleFormControlInput1">lecture_link</label>
-                                        <input type="text" class="form-control" id="exampleFormControlInput1">
-                                      </div>
-            
-                                     
-                                      
-            
-            
-                                  
+                                   
                                     <div class="modal-footer">
                                         <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                                        <button type="button" class="btn btn-primary">Save changes</button>
+                                        <input type="submit" class="btn btn-primary" value="Save changes">
                                       </div>
                                   </form>
                             </div>
-                            
+            
                           </div>
                         </div>
                       </div>
 
-                      <a  class="action" data-toggle="modal" data-target="#delete-modal"> <i class="bx bx-trash"></i></a>
-    
+                      <!-- edit-model-over -->
+
+
+                       <a  class="action" data-toggle="modal" data-target="#delete-modal"  > <i class="bx bx-trash"></i></a>
+
                       <!--Delete Modal-->
 
                       <div class="modal fade" id="delete-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -170,7 +160,7 @@
                                    
                                     <div class="modal-footer">
                                         <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                                        <input type="submit" class="btn btn-danger" data-dismiss="modal" value="Delete">
+                                        <input type="submit" class="btn btn-danger" value="Delete">
                                       </div>
                                   </form>
                             </div>
@@ -179,12 +169,9 @@
                         </div>
                       </div>
 
-                        
-                      
-
                     </td>
                   </tr>
-                 
+
                 </tbody>
             </table>
 
@@ -198,8 +185,5 @@
                 </ul>
                 </nav>
           </div>
-          
     </div>
-
 </div>
-

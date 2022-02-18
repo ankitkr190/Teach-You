@@ -190,3 +190,16 @@ textarea.form-control-lg {
   height: 1.4rem;
   border-radius: 0.5rem;
 }
+
+.table thead th {
+  font-size: 0.75rem;
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  border-bottom: 1px solid #e9ecef;
+}
+
+.table th {
+  color: #8898aa;
+}

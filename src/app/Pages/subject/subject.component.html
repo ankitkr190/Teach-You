@@ -119,16 +119,157 @@
                     <td *ngIf="sub.status===true;else elseBlock">Active
 
                     </td>
-
-                    <ng-template #elseBlock>
+                    
+                    <ng-template #elseBlock >
                       InActive
                     </ng-template>
                     <td>{{sub.which_year}}</td>
                     <td>
-                       <a routerLink="#" class="action"> <i class="bx bx-show"></i></a>
+                       <a routerLink="#" class="action" data-target="#viewModal" data-toggle="modal" > <i class="bx bx-show"></i></a>
 
-                       <a routerLink="#" class="action"> <i class="bx bx-edit"></i></a>
-                       <a  class="action" (click)="delete(sub.id)"> <i class="bx bx-trash"></i></a>
+
+                      <!--View Modal-->
+
+                      <div class="modal fade" id="viewModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel"> Subject Details</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                              <span aria-hidden="true">&times;</span>
+                            </button>
+                          </div>
+
+                  <div class="modal-body">
+
+                    
+                              
+                          </div>
+
+                        </div>
+                      </div>
+     </div>
+
+
+
+                       <a routerLink="#" class="action" data-target="#editModal" data-toggle="modal"> 
+                         <i class="bx bx-edit"></i>
+                        </a>
+                           
+                       
+                       <!-- edit-model -->
+
+
+             <div class="modal fade" id="editModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                <div class="modal-dialog" role="document">
+                                <div class="modal-content">
+                                  <div class="modal-header">
+                                    <h5 class="modal-title" id="exampleModalLabel">Edit Subject</h5>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                      <span aria-hidden="true">&times;</span>
+                                    </button>
+                                  </div>
+
+                          <div class="modal-body">
+                                      <form>
+                                        <div class="form-group">
+                                          <label for="exampleFormControlInput1">Category</label>
+                                          <select formControlName="categoryone" class="form-control" >
+                                            <option ></option>
+
+                                          </select>
+
+                                        </div>
+                                          <div class="form-group">
+                                            <label for="exampleFormControlInput1">Name of Subject</label>
+                                            <input type="text" class="form-control" formControlName="name" id="exampleFormControlInput1">
+                                          </div>
+
+                                          <div class="form-group row">
+                                      <div class="col-6">
+                                            <label for="exampleFormControlSelect1">Status</label>
+                                            <select class="form-control" formControlName="status" id="exampleFormControlSelect1">
+                                              <option value="True">Active</option>
+                                              <option value="False">Inactive</option>
+
+                                            </select>
+
+
+                                      </div>
+                                            <div class="col-6">
+                                              <label for="exampleFormControlSelect1">Choose Year</label>
+                                              <select class="form-control" formControlName="which_year" id="exampleFormControlSelect1">
+                                                <option value="First Year">first year</option>
+                                                <option value="Second Year">second year</option>
+                                                <option value="Third Year">third year</option>
+                                                <option value="Fourth Year">fourth year</option>
+
+
+
+                                              </select>
+
+
+                                              </div>
+
+                                          </div>
+
+                                          <div class="form-group">
+                                              <label for="exampleFormControlFile1">image</label>
+
+
+                                              <input type="file" class=" form-control form-control-sm"  id="exampleFormControlFile1">
+
+                                            </div>
+
+                                          <div class="form-group">
+                                            <label for="exampleFormControlTextarea1">description</label>
+                                            <textarea class="form-control"  formControlName="description" id="exampleFormControlTextarea1" rows="3"></textarea>
+                                          </div>
+                                          <div class="modal-footer">
+                                              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                              <input type="submit" class="btn btn-primary" value="Save changes">
+                                            </div>
+                                        </form>
+                                  </div>
+
+                                </div>
+                              </div>
+             </div>
+                            
+    
+                    <!-- edit-model-over -->
+                        
+    
+                           <a  class="action" data-toggle="modal" data-target="#delete-modal"> <i class="bx bx-trash"></i></a>
+    
+                          <!--Delete Modal-->
+    
+                          <div class="modal fade" id="delete-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                            <div class="modal-dialog" role="document">
+                              <div class="modal-content">
+                                <div class="modal-header">
+                                  <h6 class="modal-title" id="exampleModalLabel">Are you sure you want to delete?</h6>
+                                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                  </button>
+                                </div>
+                                <div class="modal-body">
+                                    <form>
+    
+                                        <h6>After deleting this video will be no longer available</h6>
+                                     
+                
+                                       
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                            <input type="submit" class="btn btn-danger" (click)="delete(sub.id)" data-dismiss="modal" value="Delete">
+                                          </div>
+                                      </form>
+                                </div>
+                
+                              </div>
+                            </div>
+                          </div>
 
 
 
