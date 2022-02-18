@@ -6,16 +6,14 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { SidebarComponent } from './components/sidebar/sidebar.component';
 import { DashboardComponent } from './Pages/dashboard/dashboard.component';
-import { MasterclassesComponent } from './Pages/live-session/masterclasses/masterclasses.component';
-import { LiveSessionComponent } from './Pages/live-session/live-session.component';
+import { MasterclassesComponent } from './Pages/dashboard/masterclasses/masterclasses.component';
 import { SubjectComponent } from './Pages/subject/subject.component';
-import { NotesComponent } from './Pages/notes/notes.component';
 import { LiveLinksComponent } from './Pages/live-links/live-links.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { ToastrModule } from 'ngx-toastr';
-import { PracticalSessionComponent } from './Pages/live-session/practical-session/practical-session.component';
-import { FirstYearComponent } from './Pages/live-session/practical-session/first-year/first-year.component';
+import { PracticalSessionComponent } from './Pages/dashboard/practical-session/practical-session.component';
+import { FirstYearComponent } from './Pages/dashboard/practical-session/first-year/first-year.component';
 
 @NgModule({
   declarations: [
@@ -23,9 +21,7 @@ import { FirstYearComponent } from './Pages/live-session/practical-session/first
     SidebarComponent,
     DashboardComponent,
     MasterclassesComponent,
-    LiveSessionComponent,
     SubjectComponent,
-    NotesComponent,
     LiveLinksComponent,
     PracticalSessionComponent,
     FirstYearComponent
