@@ -14,6 +14,11 @@ import { HttpClientModule } from '@angular/common/http';
 import { ToastrModule } from 'ngx-toastr';
 import { PracticalSessionComponent } from './Pages/dashboard/practical-session/practical-session.component';
 import { FirstYearComponent } from './Pages/dashboard/practical-session/first-year/first-year.component';
+import { FirstyearMasterclassComponent } from './Pages/dashboard/masterclasses/firstyear-masterclass/firstyear-masterclass.component';
+import { SecondyearMasterclassComponent } from './Pages/dashboard/masterclasses/secondyear-masterclass/secondyear-masterclass.component';
+import { ThirdyearMasterclassComponent } from './Pages/dashboard/masterclasses/thirdyear-masterclass/thirdyear-masterclass.component';
+import { FourthyearMasterclassComponent } from './Pages/dashboard/masterclasses/fourthyear-masterclass/fourthyear-masterclass.component';
+
 
 @NgModule({
   declarations: [
@@ -24,7 +29,12 @@ import { FirstYearComponent } from './Pages/dashboard/practical-session/first-ye
     SubjectComponent,
     LiveLinksComponent,
     PracticalSessionComponent,
-    FirstYearComponent
+    FirstYearComponent,
+    FirstyearMasterclassComponent,
+    SecondyearMasterclassComponent,
+    ThirdyearMasterclassComponent,
+    FourthyearMasterclassComponent,
+    
   ],
   imports: [
     BrowserModule,

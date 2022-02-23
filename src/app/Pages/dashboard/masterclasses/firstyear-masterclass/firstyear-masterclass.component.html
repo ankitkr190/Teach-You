@@ -1,0 +1,153 @@
+<div class="container">
+    <div class="header">
+    <div class="title">
+        <h4>First Year Subjects</h4>
+    </div>
+  
+        <a routerLink="/subject" class="btn btn-primary">Add Subject</a> 
+       
+
+    </div>
+
+
+   
+
+</div>
+
+
+<div class="container mt-4">
+    <div class="mt-4">
+        <div class="table-responsive">
+            <table class="table">
+                
+                <caption>List of Subject
+
+                 
+                </caption>
+                
+                <thead>
+                  <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">subject_name</th>
+                    <th scope="col">title</th>
+                    
+
+                    <th scope="col">action</th>
+
+
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th scope="row">1</th>
+                    <td>Mark</td>
+                    <td>Otto</td>
+                    <td>
+
+                       <a routerLink="#" class="action"> <i class="bx bx-edit" data-target="#editModal" data-toggle="modal"></i></a>
+
+                      <!--Edit Modal start-->
+
+                      <div class="modal fade" id="editModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog" role="document">
+                          <div class="modal-content">
+                            <div class="modal-header">
+                              <h5 class="modal-title" id="exampleModalLabel">Edit Lecture</h5>
+                              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                              </button>
+                            </div>
+                            <div class="modal-body">
+                                <form>
+                                    <div class="form-group">
+                                      <label for="exampleFormControlInput1">title</label>
+                                      <input type="text" class="form-control" id="exampleFormControlInput1">
+                                    </div>
+                                    <div class="form-group">
+                                      <label for="exampleFormControlSelect1">subject_name</label>
+                                      <select class="form-control" id="exampleFormControlSelect1">
+                                        <option>Anatomy 1</option>
+                                        <option>Anatomy 2</option>
+                                        <option>Anatomy 3</option>
+                                        <option>Anatomy 4</option>
+                                        
+                                      </select>
+            
+                                      </div>
+            
+                                      <div class="form-group">
+                                        <label for="exampleFormControlInput1">lecture_link</label>
+                                        <input type="text" class="form-control" id="exampleFormControlInput1">
+                                      </div>
+            
+                                     
+                                      
+            
+            
+                                  
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                        <button type="button" class="btn btn-primary">Save changes</button>
+                                      </div>
+                                  </form>
+                            </div>
+                            
+                          </div>
+                        </div>
+                      </div>
+
+                      <a  class="action" data-toggle="modal" data-target="#delete-modal"> <i class="bx bx-trash"></i></a>
+    
+                      <!--Delete Modal-->
+
+                      <div class="modal fade" id="delete-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog" role="document">
+                          <div class="modal-content">
+                            <div class="modal-header">
+                              <h6 class="modal-title" id="exampleModalLabel">Are you sure you want to delete?</h6>
+                              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                              </button>
+                            </div>
+                            <div class="modal-body">
+                                <form>
+
+                                    <h6>After deleting this video will be no longer available</h6>
+                                 
+            
+                                   
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                        <input type="submit" class="btn btn-danger" data-dismiss="modal" value="Delete">
+                                      </div>
+                                  </form>
+                            </div>
+            
+                          </div>
+                        </div>
+                      </div>
+
+                        
+                      
+
+                    </td>
+                  </tr>
+                 
+                </tbody>
+            </table>
+
+            <nav aria-label="Page navigation example">
+                <ul class="pagination">
+                  <li class="page-item"><a class="page-link" href="#">Previous</a></li>
+                  <li class="page-item"><a class="page-link" href="#">1</a></li>
+                  <li class="page-item"><a class="page-link" href="#">2</a></li>
+                  <li class="page-item"><a class="page-link" href="#">3</a></li>
+                  <li class="page-item"><a class="page-link" href="#">Next</a></li>
+                </ul>
+                </nav>
+          </div>
+          
+    </div>
+
+</div>
+

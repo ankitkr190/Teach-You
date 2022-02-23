@@ -200,6 +200,6 @@ textarea.form-control-lg {
   border-bottom: 1px solid #e9ecef;
 }
 
-.table th {
+.table thead th {
   color: #8898aa;
 }
